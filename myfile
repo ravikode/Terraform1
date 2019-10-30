@@ -1,0 +1,10 @@
+provider "aws" {
+ access_key = "AKIA4LIM34K2NXSJ4E6L"
+ secret_key = "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"
+ region     = "us-West-2"
+}
+resource "aws_instance" "web" {
+ ami    = "ami-048a01c78f7bae4aa"
+ instance_type = "t2.micro"
+}
+
